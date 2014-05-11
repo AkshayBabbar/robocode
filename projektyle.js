@@ -1,6 +1,6 @@
 /** 
  * Projektyle JS Code
- * Rank: 2182
+ * Rank: 1485
  * Strategy: 
  *  Fire shots in a "v" shaped formation, encompassing the enemy robot and 
  *  preventing possibility of escape. Clone at the beginning of the match
