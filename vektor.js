@@ -35,7 +35,7 @@ Robot.prototype.onScannedRobot = function(ev) {
   if(enemy.id !== vektor.parentId && enemy.parentId !== vektor.id) {
     vektor.fire(1);
     if (ev.robot.parentId !== null) {
-	vektor.fire();
+				vektor.fire();
       	vektor.fire();
         vektor.rotateCannon(35);
         vektor.fire();
@@ -70,9 +70,8 @@ Robot.prototype.onRobotCollision = function(ev) {
  
 Robot.prototype.onHitByBullet = function(ev) {
   var vektor = ev.robot;
-  vektor.dissapear();
+  vektor.disappear();
   if (vektor.parentId !== null) {   
-    //try to dissapear
     vektor.stop();
     vektor.rotateCannon(ev.bearing);
     vektor.fire(1);
