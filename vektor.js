@@ -24,8 +24,8 @@ Robot.prototype.onIdle = function(ev) {
         t = 0;
     }
     if(vektor.life < 60) {
-			vektor.disappear();
-			vektor.ahead(200);
+	vektor.disappear();
+	vektor.ahead(200);
     }	
   }
   vektor.ahead(1000);  
@@ -37,7 +37,7 @@ Robot.prototype.onScannedRobot = function(ev) {
   if(enemy.id !== vektor.parentId && enemy.parentId !== vektor.id) {
     vektor.fire(1);
     if (ev.robot.parentId !== null) {
-				vektor.fire();
+	vektor.fire();
       	vektor.fire();
         vektor.rotateCannon(35);
         vektor.fire();
