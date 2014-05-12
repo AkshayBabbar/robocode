@@ -2,6 +2,8 @@
 /**
  * Vektor Robot Code
  * Version 5112014
+ * Rank: 226
+ * Author: Manan
 **/
 
 var t = 0;
