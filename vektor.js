@@ -1,3 +1,9 @@
+
+/**
+ * Vektor Robot Code
+ * Version 5112014
+**/
+
 var t = 0;
 var Robot = function(vektor) {
   vektor.rotateCannon(90); 
@@ -65,5 +71,12 @@ Robot.prototype.onRobotCollision = function(ev) {
 Robot.prototype.onHitByBullet = function(ev) {
   var vektor = ev.robot;
   vektor.dissapear();
-  vektor.turn(90 - (ev.bulletBearing*2));
+  if (vektor.parentId !== null) {   
+    //try to dissapear
+    vektor.stop();
+    vektor.rotateCannon(ev.bearing);
+    vektor.fire(1);
+    vektor.turn(90 - ev.bulletBearing);
+  }
+  else vektor.turn(90 - (ev.bulletBearing*2));
 };
