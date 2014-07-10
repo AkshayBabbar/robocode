@@ -1,5 +1,5 @@
 robocode
---------
+========
 
 Online robot competition code. Sites supported: 
  - fightcodegame.com
@@ -7,7 +7,7 @@ Online robot competition code. Sites supported:
  
 
 FightCodeGame
-------------
+=============
 
 Profile: http://fightcodegame.com/profile/mananshah99/
 
@@ -19,7 +19,7 @@ Ranking:
   
 
 RobotGame
----------
+=========
 
 Profile: https://robotgame.net/user/9386
 
